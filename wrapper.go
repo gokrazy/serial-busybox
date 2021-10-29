@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-	busybox := bundled["third_party/busybox-1.31.1/busybox"]
 	const wellKnownSerialShell = "/tmp/serial-busybox/ash"
 	if err := os.MkdirAll(filepath.Dir(wellKnownSerialShell), 0755); err != nil {
 		log.Fatalf("Mkdir: %v", err)
